@@ -33,7 +33,6 @@ tasks.jar {
     attributes["Main-Class"] = "org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler"
   }
 }
-
 tasks.test {
   maxHeapSize = "1024m"
 }
