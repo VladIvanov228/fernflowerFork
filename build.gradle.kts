@@ -27,6 +27,7 @@ dependencies {
   testImplementation("org.assertj:assertj-core:3.26.3")
 }
 
+
 tasks.jar {
   archiveFileName = "fernflower.jar"
   manifest {
@@ -34,6 +35,5 @@ tasks.jar {
   }
 }
 tasks.test {
-	useJUnitPlatform()
-	maxHeapSize = "1024m"
+  maxHeapSize = "1024m"
 }
