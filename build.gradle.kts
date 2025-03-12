@@ -35,5 +35,7 @@ tasks.jar {
   }
 }
 tasks.test {
-  maxHeapSize = "1024m"
+  	useJUnitPlatform()
+	maxHeapSize = "1024m"
 }
+
