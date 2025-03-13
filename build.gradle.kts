@@ -25,6 +25,7 @@ repositories {
 dependencies {
   implementation("org.jetbrains:annotations:24.0.0")
   testImplementation("junit:junit:4.13.2")
+  testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.9.2") 
   testImplementation("org.assertj:assertj-core:3.26.3")
 }
 
@@ -43,5 +44,5 @@ tasks.test {
 pmd{
 	toolVersion = "6.55.0"
 	isIgnoreFailures = true
-	ruleSets = listOf()
+	ruleSets = listOf("category/java/errorprone.xml")
 }
