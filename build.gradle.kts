@@ -42,11 +42,8 @@ tasks.test {
 }
 
 pmd{
+	maxFailures = 10000
 	toolVersion = "6.55.0"
 	isIgnoreFailures = true
 	ruleSets = listOf("category/java/errorprone.xml")
-}
-tasks.jar {
-    archiveFileName = "fernflower.jar"
-    destinationDirectory = file("$buildDir/libs")  // Явное указание пути [5]
 }
